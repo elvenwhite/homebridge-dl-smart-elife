@@ -1,0 +1,455 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5K64DH4');</script>
+<!-- End Google Tag Manager -->
+
+
+    
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT" />
+<meta http-equiv="Expires" content="-1" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Cache-Control" content="no-cache" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<script type="text/javascript">
+sessionStorage.setItem("contextpath", "");
+</script>
+
+<link rel="shortcut icon" href="/resources/images/favicon.ico" />
+
+<!-- Webfont Load -->
+<link href="/resources/style/metropolis.css" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+  rel="stylesheet"
+/>
+<!-- //Webfont Load -->
+<!-- CSS Library Load -->
+<link href="/resources/style/jquery-ui.css" rel="stylesheet" />
+<link href="/resources/style/swiper.min.css" rel="stylesheet" />
+<link href="/resources/style/Chart.min.css" rel="stylesheet" />
+<!-- //CSS Library Load -->
+<!-- Custom CSS Load -->
+<link href="/resources/style/reset.css?v=2020082015" rel="stylesheet" />
+<link href="/resources/style/elife-style.css?v=20210726" rel="stylesheet" />
+<!-- //Custom CSS Load -->
+<title>e편한세상</title>
+
+<!-- Javascript Library Load -->
+<script src="/resources/script/jquery-3.5.1.min.js"></script>
+<script src="/resources/script/jquery-ui.min.js"></script>
+<script src="/resources/script/jquery.ui.touch-punch.js"></script>
+<script src="/resources/script/swiper.min.js"></script>
+<script src="/resources/script/echarts-en.min.js"></script>
+<!-- //Javascript  Library Load -->
+<!-- Custom Javascript Load -->
+<script src="/resources/script/jquery.dfcc.common.js?v=20210910"></script>
+<script src="/resources/script/elife-script.js?v=2021021702"></script>
+<script src="/resources/script/interface.js?v=2021091301"></script>
+<!-- <script src="/resources/script/sockjs.min.js"></script> -->
+<script src="/resources/script/dfcc.websocket.js?v=2021060903"></script>
+<script src="/resources/script/dfcc.smart.elec.js?v=2021021702"></script>
+<!-- //Custom Javascript Load -->
+<!-- Onload Javascript -->
+</head>
+<body style="margin:0 auto; display:inline; padding-top:100px;">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5K64DH4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+    <!-- wrapper -->
+    
+        
+        
+        
+        
+		    
+        
+    
+    <div class="wrapper home">
+        
+
+
+
+
+
+
+
+
+<!-- header -->
+<div class="header">
+    <h1>
+        <span>
+            
+                조명
+                
+                
+                
+                
+                
+                
+                
+                
+            
+        </span>
+    </h1>
+    <button class="btn btn-icon btn-refresh"><i></i></button>
+</div>
+<!-- //header -->
+<!-- content -->
+<div class="content" id="content">
+    <!-- 메뉴 목록 -->
+    <div class="card-list flex-box flex-wrap" id="my_room_device_list">
+        
+    </div>
+    <!-- //메뉴 목록 -->
+</div>
+<!-- //content -->
+
+<form name="controls_form">
+    <input type="hidden" name="location_name" value="" />
+    <input type="hidden" name="location_name_alias" value="" />
+    <input type="hidden" name="device_type" value="" />
+    <input type="hidden" name="uid" value="" />
+</form>
+
+<script>
+const _deviceListByType = '[{"devices":[{"uid":"CMF062411","location_name_alias":"거실","location_name":"거실","device_name":"거실","options":"","version":"1","operation":{"repeat_code":"0","reserve_remain":"","control":"off","type":"heat","set_temp":"22","mode":"heat","location_name":"거실","repeat":"off","current_temp":"22","reserve":"off","repeat_remain":"","options":"","reserve_hour":"0"}},{"uid":"CMF062412","location_name_alias":"침실1","location_name":"침실1","device_name":"침실1","options":"","version":"1","operation":{"repeat_code":"0","reserve_remain":"","control":"off","type":"heat","set_temp":"24","mode":"heat","location_name":"침실1","repeat":"off","current_temp":"23","reserve":"off","repeat_remain":"","options":"","reserve_hour":"0"}},{"uid":"CMF062413","location_name_alias":"침실2","location_name":"침실2","device_name":"침실2","options":"","version":"1","operation":{"repeat_code":"1","reserve_remain":"","control":"on","type":"heat","set_temp":"23","mode":"heat","location_name":"침실2","repeat":"off","current_temp":"21","reserve":"off","repeat_remain":"","options":"","reserve_hour":"0"}},{"uid":"CMF062414","location_name_alias":"침실3","location_name":"침실3","device_name":"침실3","options":"","version":"1","operation":{"repeat_code":"0","reserve_remain":"","control":"off","type":"heat","set_temp":"17","mode":"out","location_name":"침실3","repeat":"off","current_temp":"23","reserve":"off","repeat_remain":"","options":"","reserve_hour":"0"}}],"type":"heat"},{"devices":[{"uid":"CMF104211","location_name_alias":"거실","location_name":"거실","device_name":"일괄스위치","options":"","version":"1","operation":{"location_name":"거실","options":"","type":"alloffswitch","status":"off"}}],"type":"alloffswitch"},{"devices":[{"uid":"CMF080111","location_name_alias":"거실","location_name":"거실","device_name":"환기","options":"","version":"1","operation":{"filter_error":[],"location_name":"거실","options":"","running_time":"13368","wind_speed":"high","off_rsv_time":"0","type":"vent","status":"on"}}],"type":"vent"},{"devices":[{"uid":"CMF513201","location_name_alias":"현관","location_name":"현관","device_name":"도어락","options":"","version":"1","operation":{"location_name":"현관","care_period":"12/09:00","options":"","battery":"55","care_use":"N","type":"smartdoor","status":"CLOSE"}}],"type":"smartdoor"},{"devices":[{"uid":"CMF093111","location_name_alias":"거실","location_name":"거실","device_name":"거실1-1","options":"","version":"1","operation":{"location_name":"거실","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093112","location_name_alias":"거실","location_name":"거실","device_name":"거실1-2","options":"","version":"1","operation":{"location_name":"거실","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093113","location_name_alias":"거실","location_name":"거실","device_name":"거실1-3","options":"","version":"1","operation":{"location_name":"거실","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093121","location_name_alias":"침실1","location_name":"침실1","device_name":"침실1-1","options":"","version":"1","operation":{"location_name":"침실1","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093122","location_name_alias":"침실1","location_name":"침실1","device_name":"침실1-2","options":"","version":"1","operation":{"location_name":"침실1","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093123","location_name_alias":"침실1","location_name":"침실1","device_name":"침실1-3","options":"","version":"1","operation":{"location_name":"침실1","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093131","location_name_alias":"침실2","location_name":"침실2","device_name":"침실2-1","options":"","version":"1","operation":{"location_name":"침실2","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093132","location_name_alias":"침실2","location_name":"침실2","device_name":"침실2-2","options":"","version":"1","operation":{"location_name":"침실2","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093141","location_name_alias":"침실3","location_name":"침실3","device_name":"침실3-1","options":"","version":"1","operation":{"location_name":"침실3","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093142","location_name_alias":"침실3","location_name":"침실3","device_name":"침실3-2","options":"","version":"1","operation":{"location_name":"침실3","options":"","type":"wallsocket","status":"on"}},{"uid":"CMF093151","location_name_alias":"주방","location_name":"주방","device_name":"주방","options":"","version":"1","operation":{"location_name":"주방","options":"","type":"wallsocket","status":"on"}}],"type":"wallsocket"},{"devices":[{"uid":"CMF021111","location_name_alias":"거실","location_name":"거실","device_name":"거실","options":"multi01_100_100","version":"1","operation":{"location_name":"거실","options":"multi01_100_100","type":"light","value":"multi01_001_001","status":"off"}},{"uid":"CMF022521","location_name_alias":"침실1","location_name":"침실1","device_name":"침실1-1","options":"light_999_999","version":"1","operation":{"location_name":"침실1","options":"light_999_999","type":"light","value":"light_999_999","status":"on"}},{"uid":"CMF022522","location_name_alias":"침실1","location_name":"침실1","device_name":"침실1-2","options":"light_999_999","version":"1","operation":{"location_name":"침실1","options":"light_999_999","type":"light","value":"light_999_999","status":"on"}},{"uid":"CMF022531","location_name_alias":"침실2","location_name":"침실2","device_name":"침실2","options":"light_999_999","version":"1","operation":{"location_name":"침실2","options":"light_999_999","type":"light","value":"light_999_999","status":"off"}},{"uid":"CMF022541","location_name_alias":"침실3","location_name":"침실3","device_name":"침실3","options":"light_999_999","version":"1","operation":{"location_name":"침실3","options":"light_999_999","type":"light","value":"light_999_999","status":"off"}}],"type":"light"},{"devices":[{"uid":"CMF012711","location_name_alias":"주방","location_name":"주방","device_name":"가스","options":"gas_01","version":"1","operation":{"location_name":"주방","options":"gas_01","type":"gas","status":"close"}}],"type":"gas"},{"devices":[{"uid":"CMF072801","location_name_alias":"거실","location_name":"거실","device_name":"거실","options":"","version":"1","operation":{"mode":"cool","location_name":"거실","current_temp":"22","options":"","wind_speed":"high","type":"aircon","set_temp":"18","status":"off"}},{"uid":"CMF072802","location_name_alias":"침실1","location_name":"침실1","device_name":"침실1","options":"","version":"1","operation":{"mode":"cool","location_name":"침실1","current_temp":"21","options":"","wind_speed":"high","type":"aircon","set_temp":"18","status":"off"}},{"uid":"CMF072803","location_name_alias":"침실2","location_name":"침실2","device_name":"침실2","options":"","version":"1","operation":{"mode":"cool","location_name":"침실2","current_temp":"24","options":"","wind_speed":"high","type":"aircon","set_temp":"18","status":"off"}},{"uid":"CMF072804","location_name_alias":"침실3","location_name":"침실3","device_name":"침실3","options":"","version":"1","operation":{"mode":"cool","location_name":"침실3","current_temp":"18","options":"","wind_speed":"high","type":"aircon","set_temp":"18","status":"off"}}],"type":"aircon"}]';
+
+function setDeviceStatusByRoom() {
+	let html = '';
+    let html_total = '';
+    let html_by_room = '';
+    let data = _deviceListByType;
+    let devices_by_room = {};
+    let all_devices = [];
+    let all_devices_uid = '';
+    let all_status = '';
+
+	if (data != null && data != undefined) {
+		data = JSON.parse(data);
+
+        for (let i = 0 ; i < data.length ; i++) {
+            //console.log(data[i].type);
+
+            // 해당 페이지에 요청된 기기 타입만만
+            if(data[i].type == 'light') {
+                for (let j = 0; j < data[i].devices.length; j++) {
+
+                    //console.log(data[i].devices[j]);
+                    //console.log(devices_by_room[data[i].devices[j].location_name_alias] == undefined);
+
+                    if (devices_by_room[data[i].devices[j].location_name_alias] == undefined) {
+                        devices_by_room[data[i].devices[j].location_name_alias] = [];
+                    }
+
+                    //test
+                    //if (data[i].devices[j].uid == "CMF020403") {
+                    //    data[i].devices[j].operation.status = 'on';
+                    //}
+
+                    devices_by_room[data[i].devices[j].location_name_alias].push(data[i].devices[j]);
+
+                    all_devices.push(data[i].devices[j]);
+                }
+                break;
+            } else {
+                continue;
+            }
+        }
+
+        //console.log(devices_by_room);
+        //console.log(JSON.stringify(all_devices));
+
+        $.each(devices_by_room, function(location_name, devices) {
+            //console.log(location_name);
+            //console.log(devices);
+            //console.log(devices.length);
+
+            let uid = '';
+            let unique_id = '';
+            let status = '';
+
+            let has_multi_device_in_room = devices.length > 1 ? true : false;
+            //console.log('has_multi_device_in_room: ' + has_multi_device_in_room);
+            let location_name_alias = devices[0].location_name_alias;
+            let real_location_name = devices[0].location_name;
+
+            if (has_multi_device_in_room == false) {
+            	if(devices[0] != undefined && devices[0].operation != undefined) {
+	                uid = devices[0].uid;
+	                unique_id = uid;
+	                status = (devices[0].operation.status != undefined ? devices[0].operation.status : devices[0].operation.control);
+	                //console.log(status);
+	                all_devices_uid += (all_devices_uid.length > 0 ? ',' : '') + uid;
+	                all_status += (all_status.length > 0 ? ',' : '') + status;
+            	}
+            } else {
+                for (let j = 0 ; j < devices.length ; j++) {
+                	if(devices[j] != undefined && devices[j].operation != undefined) {
+	                    uid += (j > 0 ? ',' : '') + devices[j].uid;
+	                    unique_id += (j > 0 ? '_' : '') + devices[j].uid;
+	                    status += (j > 0 ? ',' : '') + (devices[j].operation.status != undefined ? devices[j].operation.status : devices[j].operation.control);
+	                    all_devices_uid += (all_devices_uid.length > 0 ? ',' : '') + devices[j].uid;
+	                    //console.log(devices[j]);
+	                    all_status += (all_status.length > 0 ? ',' : '') + (devices[j].operation.status != undefined ? devices[j].operation.status : devices[j].operation.control);
+                	}
+                }
+            }
+
+
+            if (has_multi_device_in_room) {
+                html_by_room += '<div class="card round-box width-50 for_js_device_item" id="device_multi_' + unique_id + '" data-type="light" data-uid="' + uid + '" data-status="' + status + '">';
+                html_by_room += '       <div class="card-title"><span>' + location_name_alias + '</span><button class="btn btn-indepth btn-icon for_js_device_list_by_room_button" data-location_name="' + real_location_name + '" data-location_name_alias="' + $.clearXSS(location_name_alias) + '"></button></div>';
+            } else {
+                //console.log(status);
+                html_by_room += '<div class="card round-box width-50 for_js_device_item" id="device_single_' + unique_id + '_' + uid + '" data-type="light" data-uid="' + uid + '" data-status="' + status + '">';
+	            
+                if(false) {
+                	
+	                html_by_room += '       <div class="card-title"><span>' + location_name_alias + '</span></div>';
+                } else {
+	                html_by_room += '       <div class="card-title"><span>' + location_name_alias + '</span><button class="btn btn-indepth btn-icon for_js_device_list_by_room_button" data-location_name="' + real_location_name + '" data-location_name_alias="' + $.clearXSS(location_name_alias) + '"></button></div>';
+                }
+            }
+            html_by_room += '       <div class="card-text"><span class="for_js_device_status">loading...</span></div>';
+            html_by_room += '       <div class="btns-group"><button class="btn btn-primary-point btn-size-small for_js_device_control_button disabled">loading...</button></div>';
+            html_by_room += '   </div>';
+        });
+
+        // 전체
+        html_total += '<div class="card round-box width-50 for_js_device_item" id="device_multi_total" data-type="light" data-uid="' + all_devices_uid + '" data-status="' + all_status + '" data-is_control_all="Y">';
+        html_total += '    <div class="card-title"><span>전체</span></div>';
+        html_total += '    <div class="card-text"><span class="for_js_device_status">loading...</span></div>';
+        html_total += '    <div class="btns-group"><button class="btn btn-primary-point btn-size-small for_js_device_control_button disabled">loading...</button></div>';
+        html_total += '</div>';
+
+        html += html_total;
+        html += html_by_room;
+
+        $('#my_room_device_list').html(html);
+
+        let _json = {
+            'header': {
+                'category': 'control',
+                //'type': data[i].type,
+                'type': 'light',
+                'command': 'query_response',
+            }, 'data': {
+                //'devices': data[i].devices
+                'devices': all_devices
+            }
+        }
+        //console.log('call deviceStatusUIHandler')
+        $.deviceStatusUIHandler(_json, "smartHome");
+        //setStatusByRoom(_json);
+	}
+}
+
+// 기기 상태 체크 실행
+function checkDeviceStatus() {
+    let message = {
+        'roomKey': 'eyJzaXRlSWQiOjk0MSwiZG9uZyI6IjAxMDQiLCJobyI6IjA4MDMifQ==',
+        'userKey': '202212261147478795302',
+        'accessToken': 'dKi7Wg7tTsU7g5bvP4G8EecQnsgm7CZOaQLMQp9Po2',
+        'data': [{'type': 'light'}]
+    }
+
+    // 웹소켓 서버로 메시지 전송
+    _ws.send(JSON.stringify(message));
+}
+
+// 웹소켓 재연결을 위한 함수 선언
+function connectWebSocketOnPage() {
+	// 웹소켓 연결
+	$.connectWebSocket(
+		function(e) {
+			// ws onopen
+			// 웹소켓 연결 마지막 시각 갱신
+			_ws_last_connected_time = new Date().getTime();
+			
+			checkDeviceStatus(); // 웹소켓이 연결되면, 기기 상태 체크 실행
+		}, function(e) {
+			// ws onmessage
+			// 구독 데이터를 웹소켓으로 전달받고, UI 처리
+			let data = e.data;
+			
+			try {
+                let json = JSON.parse(e.data);
+                console.log(json);
+                $.deviceStatusUIHandler(json, "smartHome");
+                //setStatusByRoom(json);
+			} catch (e) {
+				console.log(e);
+			}
+		}, function(e) {
+			// ws onclose
+			setTimeout(function() {
+				connectWebSocketOnPage();
+			}, 1000);
+		}, function(e) {
+			// ws onerror
+			_ws.close();
+		}
+	);
+}
+
+
+function setBackEvent() {
+	jsBridge_pageMove("/controls/home.do", "slideRight");
+}
+
+$(function () {
+	connectWebSocketOnPage(); // 페이지 로드시 웹소켓 연결
+	
+	
+	setDeviceStatusByRoom();
+	
+	
+	$.webSocketMonitor();
+});
+
+// 방별 + 기기 타입별 상세 목록 페이지로 이동
+$(document).on('click', '.for_js_device_list_by_room_button', function() {
+
+
+    let device_item = $(this).parent().parent('.for_js_device_item'); // button 의 parent element ('.for_js_device_item')
+    let uid = device_item.data('uid'); // device uid
+    let has_multi_devices = false;
+    let deviceType = 'light';
+    //console.log(uid);
+
+    if (uid.split(',').length > 1) {
+        has_multi_devices = true;
+    }
+    //console.log(has_multi_devices);
+
+    $('form[name=controls_form] input[name=device_type]').val(deviceType);
+    $('form[name=controls_form] input[name=location_name]').val($(this).data('location_name'));
+
+    if (has_multi_devices == false) {
+
+        $('form[name=controls_form] input[name=uid]').val(uid);
+        $('form[name=controls_form] input[name=location_name_alias]').val($(this).data('location_name_alias'));
+
+        if (deviceType == 'light') {
+            jsBridge_pageMove("/controls/light.do", "slideLeft", "form[name=controls_form]");
+        } else if (deviceType == 'heat') {
+            jsBridge_pageMove("/controls/heat.do", "slideLeft", "form[name=controls_form]");
+        } else if (deviceType == 'wallsocket') {
+            jsBridge_pageMove("/controls/wallsocket.do", "slideLeft", "form[name=controls_form]");
+        } else if (deviceType == 'aircon') {
+            jsBridge_pageMove("/controls/aircon.do", "slideLeft", "form[name=controls_form]");
+        } else if (deviceType == 'vent') {
+            jsBridge_pageMove("/controls/vent.do", "slideLeft", "form[name=controls_form]");
+        }
+    } else {
+        $('form[name=controls_form] input[name=uid]').val('');
+        jsBridge_pageMove("/controls/roomDeviceType.do", "slideLeft", "form[name=controls_form]");
+    }
+});
+
+/**
+ * button class 에 'for_js_device_control_button' 가 있는 경우 click 시 기기 제어 요청 실행
+ * 모든 처리 과정 성공시, subscribe 으로 기기 상태 정보를 받고, websocket 으로 메시지가 수신
+ * websocket 의 수신 메시지를 기기 상태 변경 함수($.deviceStatusUIHandler()) 로 일괄 처리
+ */
+$(document).on('click', '.for_js_device_control_button', function(e) {
+	e.preventDefault();
+	var device_item = $(this).parent().parent('.for_js_device_item'); // button 의 parent element ('.for_js_device_item')
+	var type = device_item.data('type'); // device type
+	var uid = device_item.data('uid'); // device uid
+    var is_control_all = device_item.data('is_control_all') == undefined ? 'N' : device_item.data('is_control_all'); // 기기 타입별 전체 제어 여부 (Y: 전체 제어, undefined(=N): 기기 개별 제어)
+	var control = $(this).data('control'); // 제어 요청할 control 값
+
+    if (type == 'gas') {
+        control = 'close';
+        
+        if($(this).hasClass("disabled")) {
+            commonToast("안전상 잠금만 가능합니다.");
+            return false;
+        }
+    }
+
+	// 중복 요청 방지를 위해 n초뒤 인디케이터 제거
+    $.showAjaxIndicatorSec(3);
+		
+	// 기기 제어 요청 ajax 실행
+	$.restful({
+		url: '/device/control/all.ajax',
+		header: {
+			'_csrf': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWVsaW1fYWNyb19zeXN0ZW1fYXV0aG9yaXphdGlvbiIsImlzcyI6ImRhZWxpbV9hY3JvX3N5c3RlbSIsIl90b2tlbiI6Ik1DQ3BmaTRQWkJiMVhqNDVWN3kzWmkvNUNleWd1NGg0UWk4djdyb2pGSGJIZ2FHU3VvMVJoU3BIQWx6TU1aVmkiLCJfdXVpZCI6IjA2MmNmZjY3LTRmMDYtNDQyYy1hY2E4LTdmYWNiZGZiNmFjMCJ9.At3X8iy5uerZrwPlzgC63JiY8TDHXZqUZi-y1IF-eyo',
+               'daelim_elife': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWVsaW1fYWNyb19zeXN0ZW1fYXV0aG9yaXphdGlvbiIsImFjY2Vzc190b2tlbl9nZXRfbWlsbGlzIjoiZy96Unk5N2xRZ1RoOExQcXUwbEhtUT09IiwiYXV0b19sb2dpbiI6IlBMYTlPYys4SHFWK0dISitIajBTT2c9PSIsIm1lbWJfaWQiOiJUdG9iWDc5cU9TMys3TEhXRzMvSDlKN3JQaDB4VHBxTXNaeXF1RlpEMWZJPSIsImdhX2NvZGUiOiI4TzRrU3JRdmZpQzdlRkd2TFkrRW13PT0iLCJkYW5qaV90b2tlbiI6ImdnZlhyWFM4ZkVzYjM5TThEUC82ZWFxQnc5Y3RtcW9pWmhHcFd3b1BjaGxCNEVCbjlFMU9Sd05YeWlnWGdZRlAiLCJobyI6ImdiZFNiMUtLYzVyNVNHL3IzWmRoQ2c9PSIsImdhX3VzZV95biI6IjZ1ODdkbXZ0RlA3VFA3QkFPSFBRTVE9PSIsImlzcyI6ImRhZWxpbV9hY3JvX3N5c3RlbSIsImRqX25tIjoiNkZsbm8yMUF3RlNpSGY5SThTYVl2bW1EM1FVeWwzbHBuV1BWak4wWFNlaz0iLCJkb25nIjoiRGNZNGdZZTBmcWczQXFvNkNhWUxaUT09IiwiYWNjZXNzX3Rva2VuX2V4cGlyZXNfaW4iOiJkWXhlMTg5TERsV2EwL0MwdUZZYlJBPT0iLCJhY2Nlc3NfdG9rZW4iOiJQOXh5MzRidVFwNU5JM1lXNlR0RDFVSGMzczcyQ0ZlK1NmRzFPeHZmd0hWOVlUN0ZpbnRnSlNwdkZyTUJqQXJCIiwiZGpfY2siOiIwbWdHZC8xdERVNXBQR3M3Nmt1eEZ5UDY0dlFIcWNJSzB5WjZxb1FORk1BPSIsImR2X3V1aWQiOiJma2xXOEMyTG1CeEVvdEZDeVIrY2txYWo2REtXQng4L1F2MnZEQjVSaDZ4YW5ZSXJlaXR6Y3pVc21wdFJQRjV5IiwibWVtYl9wdyI6IlhPR3dBcStJTm1VRnNjNzhWdWlESjg3K2JaWmxSTmFkcWJCUFpJZWpkNldvRUZjMmtmQU1TbXNWRC9acm1FVy8iLCJobV9jZCI6IjdFVzVFOWxyRlA5UzdqTWlneSt3Z05QYWNTaDhNTm9XcCs3cXhkL1hFOW50aEV1ak5paVJ2ays5aEUzOGwvUm5wSGRLdXVZNStHNm43YS9odzZCSERBPT0iLCJtZW1iX3VpZCI6IkpaT2dGUmt0bmpmNDFMMEpWQUI4WDNNYTlPZ1NNZ3FZbnROc3UrajQvSUk9IiwiYWxpYXMiOiIreEhkSFduSmYwSjFWdC9FbkpzS2NBPT0iLCJleHAiOjE2NzgwMzgwMzR9.X_g7sAWes8HkfxvHdICAo-Hggmu3Uf3yANLjw-Kctj4'
+		},
+		ajaxIndicator: false,
+		data: JSON.stringify({
+			'type' : type,
+			'uid' : uid,
+			'control' : control,
+               'is_control_all' : is_control_all
+		}),
+		callback: function(data, textStatus, jqXHR) {
+			if (data.result == false) {
+				if (data.errCode == 'NO_LOGIN') {
+					jsBridge_callLoginView({"message":"로그인이 필요 합니다."});
+					return;
+				} else if (data.errCode == 'NOT_AUTH') {
+					jsBridge_callLoginView({"message":"인증되지 않은 사용자 입니다."});
+					return;
+				} else if (data.errCode == 'NOT_FOUND_PARAMETER') {
+					commonError('잘못된 요청 입니다.');
+					return;
+				}
+			} else {
+				commonToast('기기 제어 요청이 실행 되었습니다.');
+			}
+		}
+	});
+});
+</script>
+<!-- //Onload Javascript -->
+        <div class="common-pop"></div>    <!-- 공통 얼럿 -->
+    </div>
+    <div class="concierge-pop" style="display:none;">
+        <p>아크로 서울 포레스트는 입주민을 대상으로 컨시어지 데스크 서비스를 운영하고 있습니다.<br /><br />궁금하거나 불편한 것이 있다면 언제든지 컨시어지콜을 이용해주세요. 성심성의껏 안내 해드리겠습니다.</p>
+        <div class="input-form width-100-p border-no">
+            <div class="input-form-row border-no pd-a-0 mg-t-40">
+                <div class="input-wrap input-check">
+                    <label for="conciergeYn"><input type="checkbox" name="conciergeYn" id="conciergeYn" /><i></i></label>
+                </div>
+                <span>다시보지 않기</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+
+	
+	jsBridge_setLocalDB({'daelim_elife': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkYWVsaW1fYWNyb19zeXN0ZW1fYXV0aG9yaXphdGlvbiIsImFjY2Vzc190b2tlbl9nZXRfbWlsbGlzIjoiZy96Unk5N2xRZ1RoOExQcXUwbEhtUT09IiwiYXV0b19sb2dpbiI6IlBMYTlPYys4SHFWK0dISitIajBTT2c9PSIsIm1lbWJfaWQiOiJUdG9iWDc5cU9TMys3TEhXRzMvSDlKN3JQaDB4VHBxTXNaeXF1RlpEMWZJPSIsImdhX2NvZGUiOiI4TzRrU3JRdmZpQzdlRkd2TFkrRW13PT0iLCJkYW5qaV90b2tlbiI6ImdnZlhyWFM4ZkVzYjM5TThEUC82ZWFxQnc5Y3RtcW9pWmhHcFd3b1BjaGxCNEVCbjlFMU9Sd05YeWlnWGdZRlAiLCJobyI6ImdiZFNiMUtLYzVyNVNHL3IzWmRoQ2c9PSIsImdhX3VzZV95biI6IjZ1ODdkbXZ0RlA3VFA3QkFPSFBRTVE9PSIsImlzcyI6ImRhZWxpbV9hY3JvX3N5c3RlbSIsImRqX25tIjoiNkZsbm8yMUF3RlNpSGY5SThTYVl2bW1EM1FVeWwzbHBuV1BWak4wWFNlaz0iLCJkb25nIjoiRGNZNGdZZTBmcWczQXFvNkNhWUxaUT09IiwiYWNjZXNzX3Rva2VuX2V4cGlyZXNfaW4iOiJkWXhlMTg5TERsV2EwL0MwdUZZYlJBPT0iLCJhY2Nlc3NfdG9rZW4iOiJQOXh5MzRidVFwNU5JM1lXNlR0RDFVSGMzczcyQ0ZlK1NmRzFPeHZmd0hWOVlUN0ZpbnRnSlNwdkZyTUJqQXJCIiwiZGpfY2siOiIwbWdHZC8xdERVNXBQR3M3Nmt1eEZ5UDY0dlFIcWNJSzB5WjZxb1FORk1BPSIsImR2X3V1aWQiOiJma2xXOEMyTG1CeEVvdEZDeVIrY2txYWo2REtXQng4L1F2MnZEQjVSaDZ4YW5ZSXJlaXR6Y3pVc21wdFJQRjV5IiwibWVtYl9wdyI6IlhPR3dBcStJTm1VRnNjNzhWdWlESjg3K2JaWmxSTmFkcWJCUFpJZWpkNldvRUZjMmtmQU1TbXNWRC9acm1FVy8iLCJobV9jZCI6IjdFVzVFOWxyRlA5UzdqTWlneSt3Z05QYWNTaDhNTm9XcCs3cXhkL1hFOW50aEV1ak5paVJ2ays5aEUzOGwvUm5wSGRLdXVZNStHNm43YS9odzZCSERBPT0iLCJtZW1iX3VpZCI6IkpaT2dGUmt0bmpmNDFMMEpWQUI4WDNNYTlPZ1NNZ3FZbnROc3UrajQvSUk9IiwiYWxpYXMiOiIreEhkSFduSmYwSjFWdC9FbkpzS2NBPT0iLCJleHAiOjE2NzgwMzgwMzR9.X_g7sAWes8HkfxvHdICAo-Hggmu3Uf3yANLjw-Kctj4'}, typeof(pageInit) == "function" ? "pageInit()" : "");
+	
+
+</script>
+</html>

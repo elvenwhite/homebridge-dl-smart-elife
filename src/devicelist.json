@@ -1,0 +1,498 @@
+[
+  {
+    "devices": [
+      {
+        "uid": "CMF062411",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "거실",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "repeat_code": "0",
+          "reserve_remain": "",
+          "control": "off",
+          "type": "heat",
+          "set_temp": "22",
+          "mode": "heat",
+          "location_name": "거실",
+          "repeat": "off",
+          "current_temp": "22",
+          "reserve": "off",
+          "repeat_remain": "",
+          "options": "",
+          "reserve_hour": "0"
+        }
+      },
+      {
+        "uid": "CMF062412",
+        "location_name_alias": "침실1",
+        "location_name": "침실1",
+        "device_name": "침실1",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "repeat_code": "0",
+          "reserve_remain": "",
+          "control": "off",
+          "type": "heat",
+          "set_temp": "24",
+          "mode": "heat",
+          "location_name": "침실1",
+          "repeat": "off",
+          "current_temp": "23",
+          "reserve": "off",
+          "repeat_remain": "",
+          "options": "",
+          "reserve_hour": "0"
+        }
+      },
+      {
+        "uid": "CMF062413",
+        "location_name_alias": "침실2",
+        "location_name": "침실2",
+        "device_name": "침실2",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "repeat_code": "1",
+          "reserve_remain": "",
+          "control": "on",
+          "type": "heat",
+          "set_temp": "23",
+          "mode": "heat",
+          "location_name": "침실2",
+          "repeat": "off",
+          "current_temp": "21",
+          "reserve": "off",
+          "repeat_remain": "",
+          "options": "",
+          "reserve_hour": "0"
+        }
+      },
+      {
+        "uid": "CMF062414",
+        "location_name_alias": "침실3",
+        "location_name": "침실3",
+        "device_name": "침실3",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "repeat_code": "0",
+          "reserve_remain": "",
+          "control": "off",
+          "type": "heat",
+          "set_temp": "17",
+          "mode": "out",
+          "location_name": "침실3",
+          "repeat": "off",
+          "current_temp": "23",
+          "reserve": "off",
+          "repeat_remain": "",
+          "options": "",
+          "reserve_hour": "0"
+        }
+      }
+    ],
+    "type": "heat"
+  },
+  {
+    "devices": [
+      {
+        "uid": "CMF104211",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "일괄스위치",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "거실",
+          "options": "",
+          "type": "alloffswitch",
+          "status": "off"
+        }
+      }
+    ],
+    "type": "alloffswitch"
+  },
+  {
+    "devices": [
+      {
+        "uid": "CMF080111",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "환기",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "filter_error": [],
+          "location_name": "거실",
+          "options": "",
+          "running_time": "13626",
+          "wind_speed": "high",
+          "off_rsv_time": "0",
+          "type": "vent",
+          "status": "on"
+        }
+      }
+    ],
+    "type": "vent"
+  },
+  {
+    "devices": [
+      {
+        "uid": "CMF513201",
+        "location_name_alias": "현관",
+        "location_name": "현관",
+        "device_name": "도어락",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "현관",
+          "care_period": "12/09:00",
+          "options": "",
+          "battery": "55",
+          "care_use": "N",
+          "type": "smartdoor",
+          "status": "CLOSE"
+        }
+      }
+    ],
+    "type": "smartdoor"
+  },
+  {
+    "devices": [
+      {
+        "uid": "CMF093111",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "거실1-1",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "거실",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093112",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "거실1-2",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "거실",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093113",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "거실1-3",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "거실",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093121",
+        "location_name_alias": "침실1",
+        "location_name": "침실1",
+        "device_name": "침실1-1",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "침실1",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093122",
+        "location_name_alias": "침실1",
+        "location_name": "침실1",
+        "device_name": "침실1-2",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "침실1",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093123",
+        "location_name_alias": "침실1",
+        "location_name": "침실1",
+        "device_name": "침실1-3",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "침실1",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093131",
+        "location_name_alias": "침실2",
+        "location_name": "침실2",
+        "device_name": "침실2-1",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "침실2",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093132",
+        "location_name_alias": "침실2",
+        "location_name": "침실2",
+        "device_name": "침실2-2",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "침실2",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093141",
+        "location_name_alias": "침실3",
+        "location_name": "침실3",
+        "device_name": "침실3-1",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "침실3",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093142",
+        "location_name_alias": "침실3",
+        "location_name": "침실3",
+        "device_name": "침실3-2",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "침실3",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF093151",
+        "location_name_alias": "주방",
+        "location_name": "주방",
+        "device_name": "주방",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "location_name": "주방",
+          "options": "",
+          "type": "wallsocket",
+          "status": "on"
+        }
+      }
+    ],
+    "type": "wallsocket"
+  },
+  {
+    "devices": [
+      {
+        "uid": "CMF021111",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "거실",
+        "options": "multi01_100_100",
+        "version": "1",
+        "operation": {
+          "location_name": "거실",
+          "options": "multi01_100_100",
+          "type": "light",
+          "value": "multi01_001_001",
+          "status": "off"
+        }
+      },
+      {
+        "uid": "CMF022521",
+        "location_name_alias": "침실1",
+        "location_name": "침실1",
+        "device_name": "침실1-1",
+        "options": "light_999_999",
+        "version": "1",
+        "operation": {
+          "location_name": "침실1",
+          "options": "light_999_999",
+          "type": "light",
+          "value": "light_999_999",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF022522",
+        "location_name_alias": "침실1",
+        "location_name": "침실1",
+        "device_name": "침실1-2",
+        "options": "light_999_999",
+        "version": "1",
+        "operation": {
+          "location_name": "침실1",
+          "options": "light_999_999",
+          "type": "light",
+          "value": "light_999_999",
+          "status": "on"
+        }
+      },
+      {
+        "uid": "CMF022531",
+        "location_name_alias": "침실2",
+        "location_name": "침실2",
+        "device_name": "침실2",
+        "options": "light_999_999",
+        "version": "1",
+        "operation": {
+          "location_name": "침실2",
+          "options": "light_999_999",
+          "type": "light",
+          "value": "light_999_999",
+          "status": "off"
+        }
+      },
+      {
+        "uid": "CMF022541",
+        "location_name_alias": "침실3",
+        "location_name": "침실3",
+        "device_name": "침실3",
+        "options": "light_999_999",
+        "version": "1",
+        "operation": {
+          "location_name": "침실3",
+          "options": "light_999_999",
+          "type": "light",
+          "value": "light_999_999",
+          "status": "off"
+        }
+      }
+    ],
+    "type": "light"
+  },
+  {
+    "devices": [
+      {
+        "uid": "CMF012711",
+        "location_name_alias": "주방",
+        "location_name": "주방",
+        "device_name": "가스",
+        "options": "gas_01",
+        "version": "1",
+        "operation": {
+          "location_name": "주방",
+          "options": "gas_01",
+          "type": "gas",
+          "status": "close"
+        }
+      }
+    ],
+    "type": "gas"
+  },
+  {
+    "devices": [
+      {
+        "uid": "CMF072801",
+        "location_name_alias": "거실",
+        "location_name": "거실",
+        "device_name": "거실",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "mode": "cool",
+          "location_name": "거실",
+          "current_temp": "22",
+          "options": "",
+          "wind_speed": "high",
+          "type": "aircon",
+          "set_temp": "18",
+          "status": "off"
+        }
+      },
+      {
+        "uid": "CMF072802",
+        "location_name_alias": "침실1",
+        "location_name": "침실1",
+        "device_name": "침실1",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "mode": "cool",
+          "location_name": "침실1",
+          "current_temp": "21",
+          "options": "",
+          "wind_speed": "high",
+          "type": "aircon",
+          "set_temp": "18",
+          "status": "off"
+        }
+      },
+      {
+        "uid": "CMF072803",
+        "location_name_alias": "침실2",
+        "location_name": "침실2",
+        "device_name": "침실2",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "mode": "cool",
+          "location_name": "침실2",
+          "current_temp": "24",
+          "options": "",
+          "wind_speed": "high",
+          "type": "aircon",
+          "set_temp": "18",
+          "status": "off"
+        }
+      },
+      {
+        "uid": "CMF072804",
+        "location_name_alias": "침실3",
+        "location_name": "침실3",
+        "device_name": "침실3",
+        "options": "",
+        "version": "1",
+        "operation": {
+          "mode": "cool",
+          "location_name": "침실3",
+          "current_temp": "18",
+          "options": "",
+          "wind_speed": "high",
+          "type": "aircon",
+          "set_temp": "18",
+          "status": "off"
+        }
+      }
+    ],
+    "type": "aircon"
+  }
+]

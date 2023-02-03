@@ -1,15 +1,15 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "DLSmartElife",
   "pluginType": "platform",
   "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "token": {
+        "title": "token(daelim_elife)",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "daelim_elife header value, can be retrieved with packet sniffing"
       }
     }
   }
