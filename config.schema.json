@@ -10,6 +10,12 @@
         "type": "string",
         "required": true,
         "default": "daelim_elife header value, can be retrieved with packet sniffing"
+      },
+      "csrf": {
+        "title": "CSRF(daelim_elife)",
+        "type": "string",
+        "required": true,
+        "default": "CSRF value, can be retrieved with packet sniffing"
       }
     }
   }
